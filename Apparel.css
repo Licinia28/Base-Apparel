@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+*{
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+.container
+{
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: 1.5fr 1fr;
+}
+.left
+{
+  display: grid;
+  background: url('./images/bg-pattern-desktop.svg');
+  background-size: cover;
+}
+.right
+{
+  background-image: url('./images/hero-desktop.jpg');
+  background-size: cover;
+}
+.logo
+{
+  margin-bottom: 100px;
+  width: 13em;
+}
+.content
+{
+  width: 60%;
+  height: 80%;
+  margin: auto;
+}
+.content h1
+{
+  font-size: 3em;
+  text-align: justify;
+  text-transform: uppercase;
+  font-weight: 100;
+  color: #c08080;
+}
+.content p
+{
+  text-align: justify;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #c08080;
+}
+.form
+{
+  display: grid;
+  grid-template-columns: 5fr 1fr 1fr;
+  border: 1px solid red;
+  width: 400px;
+  border-radius: 20px;
+}
+.form input[type=email]
+{
+  border: none;
+  font-size: 1.3em;
+  border-radius: 20px 0px 0px 20px;
+  padding-left: 20px;
+  background: none;
+}
+.arrow
+{
+  width: 100%;
+  background: linear-gradient(135deg,#c08080, #F47174);
+  padding: 20px;
+  border-radius: 20px;
+}
+.error
+{
+  margin: auto;
+  visibility: hidden;
+}
+.arrow:hover
+{
+  background: linear-gradient(135deg, #F47174,#c08080);;
+  cursor: pointer;
+}
+.formMessage
+{
+  margin-left: 40px;
+  margin-top: 5px;
+  color: red;
+}
